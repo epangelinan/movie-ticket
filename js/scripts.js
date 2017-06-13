@@ -6,9 +6,9 @@ function Ticket(price){
   //this.quantity = quantity;
 }
 //method to calculate final ticket price
-Ticket.prototype.finalTicketPrice = function(price, age){
-  this.price = price;
+Ticket.prototype.finalTicketPrice = function(age){
   var taxes = this.price * .09;
+
   if (age === 1 ){
     this.price = 0;
   } else if (age === 2){
@@ -55,10 +55,10 @@ $(document).ready(function() {
       8
     );
     console.log(selectedMovie);
-    var human = new Human($("#alien .form-age").val());
+    var human = new Human(parseInt($("#alien .form-age").val()));
     //console.log(human.age);
     var ticket = new Ticket(selectedMovie.price);
-    ticket.finalTicketPrice(selectedMovie.price, human.age);
+    ticket.finalTicketPrice(human.age);
     //console.log(ticket);
   });
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
     var human = new Human(parseInt($("#wonder-woman .form-age").val()));
     //console.log(human.age);
     var ticket = new Ticket(selectedMovie.price);
-    ticket.finalTicketPrice(selectedMovie.price, human.age);
+    ticket.finalTicketPrice(human.age);
     //console.log(ticket);
   });
 
