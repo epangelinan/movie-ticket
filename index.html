@@ -8,7 +8,76 @@
     <script src="js/scripts.js"></script>
     <title></title>
   </head>
-    <body>
-      
-    </body>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="container" id="moviecontainer">
+        <div class="movie-option" id="alien">
+          <img class="movie-poster" src="img/alien.png"/>
+          <form class="movie-form" action="index.html" method="post">
+            <label class="top-of-form" for="movie-time">Movie Time</label>
+            <select class="form-control form-time">
+              <option value="1">1:00</option>
+              <option value="2">4:00</option>
+              <option value="3">7:00</option>
+            </select>
+            <label for="age">Age</label>
+            <select class="form-control form-age">
+              <option value="1">Toddler: 3 or under</option>
+              <option value="2">Child: 12 or under</option>
+              <option value="3">Young Adult: 12 to 17</option>
+              <option value="4">Adult: 18 to 65</option>
+              <option value="5">Senior Citizen: 65 or over</option>
+            </select>
+            <label for="age">Student or Military</label>
+            <select class="form-control form-discount">
+              <option value="1">Yes, please</option>
+              <option value="2">No, thank you</option>
+            </select>
+            <button class="btn-primary btn-md movie-submit" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="movie-option" id="wonder-woman">
+          <img class="movie-poster" src="img/wonder_woman.jpg"/>
+          <form class="movie-form" action="index.html" method="post">
+            <label for="movie-time">Movie Time</label>
+            <select class="form-control form-time">
+              <option value="1">12:00</option>
+              <option value="2">3:00</option>
+              <option value="3">6:00</option>
+            </select>
+            <label for="age">Age</label>
+            <select class="form-control form-age">
+              <option value="1">Toddler: 3 or under</option>
+              <option value="2">Child: 12 or under</option>
+              <option value="3">Young Adult: 12 to 17</option>
+              <option value="4">Adult: 18 to 65</option>
+              <option value="5">Senior Citizen: 65 or over</option>
+            </select>
+            <label for="age">Student or Military</label>
+            <select class="form-control form-discount">
+              <option value="1">Yes, please</option>
+              <option value="2">No, thank you</option>
+            </select>
+            <button class="btn-primary btn-md movie-submit" type="submit">Submit</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
 </html>
